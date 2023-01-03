@@ -1,0 +1,137 @@
+@import './variables.scss';
+
+.footer-container {  display: grid;
+	background-color: $blue-900;
+	color: $blue-100;
+	box-shadow: 0 0px 400px $blue-900;
+	padding-top: 50px;
+	width: 100%;
+	height: 15rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+		"developers developers developers developers developers"
+    ". jackson spencer will .";
+}
+
+.footer-col {  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  grid-auto-columns: 1fr;
+  gap: .5rem 0px;
+	width: 12rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "name name"
+    "pic links";
+	font-family: $poppins;
+}
+
+.developers {
+	font-weight: 800;
+	color: $cool-gray-300;
+	grid-area: developers;
+	display: flex;
+	justify-content: center;
+	font-family: $code;
+	letter-spacing: .2rem;
+	// color: $blue-100;
+	font-size: 2rem;
+	-webkit-font-smoothing: antialiased;
+	// font-weight: 300;
+}
+
+.name {
+	grid-area: name;
+	display: flex;
+	// text-decoration: underline;
+	font-family: $code;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+	color: $blue-100;
+	// font-weight: 400;
+	// letter-spacing: .1rem;
+	-webkit-font-smoothing: antialiased;
+
+	// text-transform: uppercase;
+	// padding: 10px;
+	// letter-spacing: .1rem;
+}
+
+.pic {
+	grid-area: pic;
+}
+
+.links a {
+	display: flex;
+	flex-direction: row;
+	color: $cool-gray-300;
+}
+
+.links {
+	grid-area: links;
+	display: flex;
+	flex-direction: column;
+	font-size: .8rem;
+	height: 100%;
+	// align-items: center;
+	// border: 1px solid white;
+	justify-content: space-around;
+}
+
+
+.footer-container img {
+	width: 80px;
+	height: 80px;
+	border: 2px solid $blue-900;
+	border-radius: 50%;
+	box-shadow: $box-shadow;
+}
+
+.jackson img {
+
+	vertical-align: top;
+	// border-radius: 50%;
+	object-fit: cover;
+	object-position: 0 5%;
+}
+
+.jackson {
+	grid-area: jackson;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.spencer {
+	grid-area: spencer;
+	display: flex;	
+	align-items: center;
+	flex-direction: column;
+}
+
+.will {
+	grid-area: will;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.personal-link {
+	color: $blue-100;
+	text-decoration: none;
+	margin: 5px;
+}
+
+.fa-brands {
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+.personal-link:hover {
+	text-decoration: underline;
+}
+

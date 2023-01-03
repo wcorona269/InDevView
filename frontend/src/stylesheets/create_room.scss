@@ -1,0 +1,92 @@
+@import './variables.scss';
+
+.create-room-container{
+    @extend %room-crud-container;
+}
+
+.create-room-main-col {
+    grid-column: 2;
+    padding: 10rem;
+}
+
+.create-room-form-inputs {
+    text-align: center;
+    width: 500px;
+    // margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.create-room-timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.coding-questions-form{
+    display: flex;
+    flex-direction: column;
+    // margin: 3rem;
+}
+
+%create-form-inputs {
+    font-size: 22px !important;
+    letter-spacing: 5px !important;
+    font-weight: 400;
+    background-color: $blue-100;
+    color: $blue-900;
+    border-radius: 5px;
+    height: 20px;
+    margin: 1rem;
+    font-family: $code;
+}
+
+#time-form {
+    width: 10px;
+    min-width: 80px;
+    text-align: center;
+    background-color: $blue-100;
+    color: $blue-900;
+}
+
+.create-room-input {
+    @extend %create-form-inputs;
+    padding: 1rem;
+    margin: 1rem;
+
+    &:focus {
+        border: 3px solid $orange-500;
+    }
+}
+
+.question-select {
+    color: $blue-900;
+    background-color: $blue-100;
+    @extend %create-form-inputs;
+    min-height: 20px;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &:focus {
+        border: 3px solid $orange-500;
+    }
+}
+
+
+.create-room-btn {
+    @extend %form-submit;
+    width: 100px !important;
+    min-width: 200px !important;
+}
+
+.create-room-btn:hover {
+    @extend %secondary-btn-hov;
+    // text-decoration: none !important;
+}

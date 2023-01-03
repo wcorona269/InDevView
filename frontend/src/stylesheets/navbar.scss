@@ -1,0 +1,242 @@
+@import './variables.scss';
+
+.nav-bar{
+    font-family: $poppins;
+    background-color: $background-color;
+    color: $blue-100;
+    // margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    // padding-right: -4rem !important;
+    // margin-right: 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $blue-500;
+    height: 40px;
+    position:sticky;
+    top:0;
+    width: 100%;
+//     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+// -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+// box-sizing: border-box;         /* Opera/IE 8+ */
+    
+}
+
+#home-button-icon {
+    font-family: $code;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: $text-shadow;
+}
+
+.nav-bar h1{
+    font-weight: bold;
+}
+
+.home-button{
+    text-decoration: none;
+    color: $blue-100;
+    margin-left: 1.5rem;
+}
+
+.nav-bar-buttons {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+
+.nav-bar-buttons a{
+    border: 1px solid $cool-gray-300;
+    border-radius: 5px;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 1rem;
+    // box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+    height: 25px;
+}
+
+.nav-bar-buttons a:hover{
+    // box-shadow: none;
+}
+
+.nav-bar-buttons button{
+    border: 1px solid $cool-gray-100;
+    border-radius: 5px;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bold;
+    // box-shadow: $text-shadow;
+    cursor: pointer;
+}
+
+.nav-bar-buttons button:hover{
+    // box-shadow: none;
+
+}
+
+.nav-middle {
+    // border: 1px solid white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    font-family: $poppins;
+    // font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+
+.signup{
+    background-color: $gray-100;
+    color: $cool-gray-900;
+    @extend %auth-buttons;
+}
+
+
+.login{
+    background-color: $cool-gray-900;
+    color: $gray-100;
+    @extend %auth-buttons;
+   }
+
+.logout {
+    background-color: $blue-900;
+    color: $blue-100;
+    border: 1px solid $blue-900 !important;
+    @extend %auth-buttons;
+    // box-shadow: $text-shadow;
+}
+
+.about {
+  background-color: $orange-300;
+  color: $blue-900;
+  border: 1px solid $orange-300 !important;
+  @extend %auth-buttons;
+  // box-shadow: $text-shadow;
+}
+
+.fa-wpexplorer {
+  // height: 30px !important;
+  // // width: 30px !important;
+  // size: 2rem;
+  size:"lg"
+}
+
+
+.list-choice{
+    width:fit-content;
+    margin:1rem auto;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  .list-choice input[type="radio"]{
+    position:absolute;
+    left:-9999px;
+  }
+
+  .list-choice-title {
+    // width: 300p
+    @extend %form-submit;
+    border: none;
+    display: block;
+    background: $background-color;
+    // text-align: center;
+    padding: 0rem 1rem !important;
+    // margin-bottom: 5rem !important;
+    height: 100%;
+    color: $orange-300;
+  }
+
+  .list-choice:hover .list-choice-title {
+  border-radius:0.2em 0.2em 0 0;
+  }
+  .list-choice-objects label:nth-last-of-type(1) span{
+    border-radius:0 0 0.2em 0.2em;
+  }
+  .list-choice input[type="radio"] + span {
+  color: #FFF;
+  background: $blue-700;
+  padding: 0.55rem 1rem;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  }
+  .list-choice-objects {
+  position: absolute;
+  top: 0;
+  padding-top: 3.3em;
+  font-weight: 200;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: $transition;
+  }
+  .list-choice:hover .list-choice-objects  input[type="radio"] + span {
+    position: relative;
+    top: 0;
+    transition: $transition;
+  }
+  .list-choice:hover input[type="radio"] + span:hover {
+    box-shadow: 0 0 20px 20px $orange-800 inset;
+
+  }
+  .list-choice:hover input[type="radio"]:checked + span:hover {
+    background:$secondary-baby-blue;
+  }
+  .list-choice input[type="radio"]:checked + span {
+    background: $cool-gray-100;
+    position: absolute;
+    top: 0em;
+    border-radius: 5px;
+  }
+  .list-choice:hover input[type="radio"]:checked + span {
+  border-radius: 0;
+  }
+  .list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
+    border-radius: 5px;
+  }
+  
+  .list-choice:hover .list-choice-objects {
+  max-height: 540px;
+  }
+
+  .nav-link {
+      text-decoration: none;
+      // padding-left: 2rem !important;
+      // width: 100%;
+      // margin-left: 2rem;
+  }
+
+.nav-about-link {
+  // color: $blue-100;
+  // font-size: 1.2rem;
+  // text-decoration: none;
+  // height: 100%;
+  // width: 100%;
+}
+
+.nav-about-link:hover {
+  // text-decoration: underline;
+}

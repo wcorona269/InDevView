@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.join-room-container{
+    @extend %room-crud-container;
+    color: $blue-100;
+}
+
+.join-room-main-col {
+    grid-column: 2;
+    padding: 10rem;
+}
+
+.join-room-input {
+    font-size: 22px !important;
+    letter-spacing: 5px !important;
+    font-weight: 400;
+    background-color: $blue-100;
+    color: $blue-900;
+    margin: 1rem;
+    border-radius: 5px;
+    width: 150px !important;
+    min-width: 100px !important;
+    height: 20px;
+    font-family: $code;
+
+    &:focus {
+        border: 3px solid $orange-500;
+    }
+}
+
+.join-room-container input{
+    // margin: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.join-room-btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#join-room-btn {
+    @extend %form-submit;
+    width: 100px !important;
+    min-width: 200px !important;
+}
+
+#join-room-btn:hover {
+    @extend %secondary-btn-hov
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  
+}
+
+#lobby-link {
+    color: $cool-gray-200;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    font-size: 18px;
+}
+
+

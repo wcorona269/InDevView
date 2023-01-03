@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.signup-form-container{
+    @extend %modal-container;
+}
+
+.signup-form-container h1{
+    @extend %form-header;
+}
+
+.signup-form-container input[type=text], .signup-form-container input[type=password]{
+    @extend %form-inputs;
+}
+
+.signup-form-container input[type=submit]{
+    @extend %form-submit;
+}
+
+.signup-form-container input[type=submit]:hover{
+    @extend %secondary-btn-hov;
+}

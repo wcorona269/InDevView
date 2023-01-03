@@ -1,0 +1,154 @@
+@import './variables.scss';
+
+.about-page{
+    background-color: $background-color;
+    color: $blue-100;
+    font-family: $code;
+    font-weight: 500;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: fit-content;
+    text-shadow: $text-shadow;
+}
+
+.about-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    align-items: flex-start;
+    align-items: center !important;
+    height: 40rem;
+    border-bottom: 4px solid $blue-700;
+}
+
+.start-btn-container {
+    // position: relativ;
+    margin-bottom: auto;
+    bottom: 0;
+}
+
+
+.about-main h1 {
+    font-weight: 500 !important;
+}
+
+.about-middle img {
+    background-color: $background-color;
+    box-shadow: 0 0 30px $blue-700;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.about-middle {
+    // border: 1px solid white;
+    width: 70%;
+    margin: 10rem;
+    margin-top: 4rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.about-middle > h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $blue-100;
+    // color: $orange-300;
+}
+
+.about-row {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.about-row-special {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    // padding: 2rem;
+    font-weight: 700;
+    row-gap: 2rem;
+}
+
+
+.about-image-row {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+}
+
+.about-row h3 {
+    font-weight: 700;
+    // text-align: left;
+    width: 30rem;
+    line-height: 2;
+    height: fit-content;
+}
+
+.about-main h2 {
+    height: 50%;
+}
+
+.about-page h1{
+    font-weight: 100;
+    font-size: 5rem;
+    text-shadow: $text-shadow;
+}
+
+
+.about-description-container, .about-us-container{
+    width: 50%;
+}
+
+.about-description-container h2, .about-description-container h3, .about-us-container h2, .about-us-container h3{
+    margin: 2rem;
+    font-weight: 700;
+}
+
+.about-description-container h2, .about-us-container h2{
+    font-size: 2rem;
+}
+
+.about-us-container {
+    margin: 5rem;
+    margin-top: -5rem;
+    line-height: 2;
+    width: 50rem;
+    min-width: 30rem;
+}
+
+
+.signup-btn{
+    @extend %form-submit;
+    font-size: 1.5rem;
+}
+
+
+.signup-btn:hover{
+    @extend %secondary-btn-hov;
+}
+
+.yellow-text {
+    color: $yellow-300;
+}
+
+.green-text {
+    color: $green-300;
+}

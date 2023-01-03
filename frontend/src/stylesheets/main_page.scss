@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.splash-page{
+    background-color: $background-color;
+    color: $gray-300;
+    font-family: $code;
+    font-weight: 100;
+    text-shadow: $text-shadow;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.orange-text {
+    color: $orange-300;
+}
+
+.splash-page h1{
+    font-size: 5rem;
+    text-shadow: $text-shadow;
+    margin: 2rem;
+}
