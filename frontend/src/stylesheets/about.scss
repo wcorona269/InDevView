@@ -73,6 +73,13 @@
     justify-content: space-around;
     font-size: 2rem;
     padding: 2rem;
+
+    img {
+        display: flex; 
+        flex-direction: row;
+        width: 100%;
+        margin: 10px;
+    }
 }
 
 .about-row-special {
